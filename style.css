@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: 0;
+    list-style: 0;
+}
+
+/* navbar */
+nav .navbar img{
+  width: 8%; 
+  margin: 15px;
+}
+
+nav{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    position: fixed;
+}
+
+nav .navbar{
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    border-bottom: 1px solid;
+}
+
+nav .navbar h3{
+    padding: 50px;
+}
+
+/* banner */
+.banner{
+    background: url(./img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.banner .welcome{
+    font-size: 25px;
+    width: 20%;
+    transform: translate(90%, 85%);
+}
+
+.banner .welcome .kelebihan{
+    margin-top: 20px;
+}
+
+.banner .welcome h2{
+    font-size: 30px;
+    margin-top: 20px;
+}
