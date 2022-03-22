@@ -8,27 +8,152 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- navbar -->
     <nav>
-      <div class="navbar">
-        <img src="./img/logo.png" alt="logo" />
-        <a href="#"><h3>Beranda</h3></a>
-        <a href="#"><h3>Jajanan</h3></a>
-        <a href="#"><h3>Hubungi Kami</h3></a>
-        <a href="#"><h3>Tentang</h3></a>
-      </div>
+      <img src="./img/logo.png" alt="logo" />
+      <ul>
+        <li><a href="./index.html">Beranda</a></li>
+        <li>
+          <a>Jajanan</a>
+          <ul class="dropdown">
+            <li><a href="./jajanan/manis.html">Manis</a></li>
+            <li><a href="./jajanan/asin.html">Asin</a></li>
+          </ul>
+        </li>
+        <li>
+          <a>Hubungi Kami</a>
+          <ul class="dropdown">
+            <li>
+              <a
+                href="whatsapp://send?text=Hello&phone=+6285794479752"
+                target="_blank"
+                >WhatsApp</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://web.facebook.com/permana.cikal.988"
+                target="_blank"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a href="https://www.instagram.com/permana_5046/" target="_blank"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li><a href="../index.html#about">Tentang</a></li>
+      </ul>
     </nav>
 
+    <!-- banner -->
     <div class="banner">
       <div class="welcome">
         <h1>Jajanan Kue "Mamah Suy"</h1>
         <div class="kelebihan">
           <h3>- Berkualitas</h3>
-          <h3>- Bahan Segar</h3>
-          <h3>- Terpercaya</h3>
+          <h3>- Harga Terjangkau</h3>
           <h3>- Higienis</h3>
+          <h3>- Terpercaya</h3>
         </div>
-        <a href="#"><h2>Yuk, Lihat-lihat!</h2></a>
+      </div>
+      <a href="#about"><h2>Yuk, Lihat-lihat!</h2></a>
+    </div>
+
+    <!-- tombolup -->
+    <a href="#nav"
+      ><img class="tombolup" src="./img/tombolup.png" alt="up"
+    /></a>
+
+    <!-- about -->
+    <div id="about">
+      <div class="kami">
+        <h1>Tentang Toko</h1>
+        <p>
+          Toko Kue "Mamah Suy" adalah toko kue yang berlokasi di Kp.
+          cikahuripan. Toko kue "Mamah Suy" cukup terkenal di Kp. Cikahuripan.
+          Banyak orang di kampung sering membeli kue ke toko "Mamah Suy" karena
+          terkenal atas kenikmatan dari kue yang dibuat oleh Mamah Suy. Nama
+          toko "Mamah Suy" sendiri merupakan singkatan dari nama pemilik toko
+          itu sendiri yaitu "Suyanah".
+        </p>
       </div>
     </div>
+
+    <!-- slideimage -->
+    <div class="boxslide">
+      <div class="slideimage">
+        <h1 class="slidehead">Preview Kue</h1>
+
+        <div class="slide">
+          <img class="mySlides" src="./img/nastar.jpg" />
+          <img class="mySlides" src="./img/sistik.jpg" />
+          <img class="mySlides" src="./img/bawang.jpeg" />
+        </div>
+      </div>
+    </div>
+
+    <!-- keunggulan -->
+    <div class="box">
+      <h1 class="headunggul">Kenapa Harus Beli di Toko "Mamah Suy"?</h1>
+      <div class="keunggulan">
+        <div class="cardunggul">
+          <img src="./img/1.png" alt="berkualitas" />
+          <h3>Berkualitas</h3>
+          <p>
+            Produk yang dihasilkan oleh toko ini memiliki kualitas yang cukup
+            tinggi.
+          </p>
+        </div>
+        <div class="cardunggul">
+          <img src="./img/2.png" alt="harga terjangkau" />
+          <h3>Harga Terjangkau</h3>
+          <p>Harga produk yang dijual oleh toko ini sangat terjangkau.</p>
+        </div>
+        <div class="cardunggul">
+          <img src="./img/4.png" alt="higienis" />
+          <h3>Higienis</h3>
+          <p>
+            Produk yang dibuat oleh toko ini dijaga kebersihan bahan maupun
+            pembuatnya sendiri.
+          </p>
+        </div>
+        <div class="cardunggul">
+          <img src="./img/3.png" alt="Terpercaya" />
+          <h3>Terpercaya</h3>
+          <p>
+            Sudah banyak respon positif dari para konsumen pada produk yang
+            dibuat oleh toko ini.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <h3>Copyright By Permana</h3>
+    </footer>
+
+    <!-- script slideimage -->
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+    </script>
   </body>
 </html>

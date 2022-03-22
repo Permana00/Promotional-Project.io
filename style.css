@@ -1,53 +1,199 @@
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: 0;
-    list-style: 0;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
 /* navbar */
-nav .navbar img{
-  width: 8%; 
-  margin: 15px;
+nav {
+  height: 70px;
+  width: 70vw;
+  background-color: rgba(177, 89, 26, 0.842);
+  border-radius: 5px;
+  font-size: 18px;
+  position: absolute;
+  transform: translateX(20%);
+  float: left;
 }
 
-nav{
-    display: flex;
-    width: 100vw;
-    justify-content: center;
-    position: fixed;
+nav img {
+  height: 7vh;
+  width: 5vw;
+  margin: 12px;
 }
 
-nav .navbar{
-    display: flex;
-    width: 70%;
-    justify-content: center;
-    border-bottom: 1px solid;
+nav ul {
+  padding: 5px;
+  float: right;
 }
 
-nav .navbar h3{
-    padding: 50px;
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  padding: 20px;
+  color: rgb(107, 13, 13);
+}
+
+nav ul li a:hover {
+  background-color: brown;
+  color: white;
+}
+
+nav ul li .dropdown {
+  display: none;
+}
+
+nav ul li:hover .dropdown {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(177, 89, 26, 0.842);
 }
 
 /* banner */
-.banner{
-    background: url(./img/banner.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
+.banner {
+  background: url(./img/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
 }
 
-.banner .welcome{
+.banner .welcome {
+  font-size: 25px;
+  width: 20%;
+  transform: translate(90%, 85%);
+  color: rgb(177, 89, 26);
+}
+
+.banner .welcome .kelebihan {
+  margin-top: 20px;
+}
+
+.banner h2 {
+  font-size: 30px;
+  transform: translate(20vw, 30vh);
+  width: 20vw;
+  text-align: center;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: rgba(223, 203, 149, 0.747);
+  color: rgb(177, 89, 26);
+  border: 2px solid;
+  transition: 0.5s;
+}
+
+.banner h2:hover {
+  background-color: chocolate;
+  color: white;
+  box-shadow: 0 0 10px 0;
+  transition: 0.5s;
+}
+
+/* about */
+#about {
+  display: flex;
+  height: 40vh;
+  width: 80vw;
+  margin: auto;
+  border-radius: 30px;
+  background-color: chocolate;
+}
+
+#about .kami {
+  width: 60vw;
+  margin: auto;
+  font-size: 20px;
+}
+
+#about .kami p {
+  margin-top: 20px;
+}
+
+/* slideimage */
+.boxslide {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  height: 85vh;
+  justify-content: center;
+}
+
+.boxslide .slideimage .slidehead {
+  text-align: center;
+  font-size: 40px;
+}
+
+.boxslide .slide .mySlides {
+  margin-top: 30px;
+  width: 65vw;
+  height: 70vh;
+}
+
+/* tombolup */
+.tombolup {
+  position: sticky;
+  width: 5%;
+  top: 88vh;
+}
+
+/* keunggulan */
+.box {
+  width: 90vw;
+  border-top: 2px solid;
+  border-left: 2px solid;
+  border-right: 2px solid;
+  border-radius: 50px 50px 0 0;
+  margin: auto;
+  color: rgb(177, 89, 26);
+  background-color: rgba(223, 203, 149, 0.747);
+}
+
+.headunggul {
+  text-align: center;
+  font-size: 40px;
+  margin: 40px;
+}
+
+.keunggulan {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.keunggulan .cardunggul {
+  width: 40vh;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.keunggulan .cardunggul img {
+  width: 50%;
+}
+
+/* footer */
+footer {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  background-color: rgba(177, 89, 26, 0.842);
+  color: rgb(107, 13, 13);
+}
+
+footer h3{
+    border-top: 1px solid;
+}
+
+@media (min-width: 992px) {
+  .banner .welcome {
     font-size: 25px;
-    width: 20%;
-    transform: translate(90%, 85%);
-}
-
-.banner .welcome .kelebihan{
-    margin-top: 20px;
-}
-
-.banner .welcome h2{
-    font-size: 30px;
-    margin-top: 20px;
+    width: 30%;
+    transform: translate(40%, 45%);
+    background-color: rgba(255, 255, 255, 0.459);
+    padding: 30px;
+    border-radius: 30px;
+    border: 5px solid rgba(177, 89, 26, 0.842);
+  }
 }
