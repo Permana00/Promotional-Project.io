@@ -63,7 +63,7 @@ nav ul li:hover .dropdown {
 /* list kue */
 .header {
   padding-top: 120px;
-  font-size: 55px;
+  font-size: 50px;
   text-align: center;
   color: chocolate;
 }
@@ -138,25 +138,28 @@ footer h3 {
   font-size: 15px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 425px) {
   /* navbar */
   nav {
-    height: 140px;
-    width: 97vw;
-    background-color: rgba(177, 89, 26, 0.842);
-    font-size: 18px;
+    height: 130px;
+    width: 96vw;
     transform: translateX(0);
     border-radius: 0;
   }
 
   nav label {
     position: absolute;
-    margin-left: 35vw;
+    margin-top: 25px;
+    margin-left: 30vw;
   }
 
   nav ul {
-    margin-right: 10vw;
-    margin-top: 10vh;
+    margin-top: 70px;
+    margin-right: 3px;
+  }
+
+  nav ul li a {
+    padding: 10px;
   }
 
   nav ul li:hover .dropdown {
@@ -165,22 +168,22 @@ footer h3 {
 
   /* list kue */
   .header{
-    padding-top: 170px;
+    padding-top: 150px;
   }
   .container {
-    width: 97vw;
+    width: 95vw;
   }
 
   .container .card {
     height: 50vh;
-    width: 50vw;
+    width: 70vw;
   }
 
   .container .card h2 {
-    margin-top: 15px;
+    margin-top: 10px;
   }
 
   .pesos .sosmed img {
-    width: 10%;
+    width: 13%;
   }
 }
