@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -13,24 +14,25 @@ nav {
   height: 70px;
   width: 70vw;
   background-color: rgba(177, 89, 26, 0.842);
-  border-radius: 5px;
+  border-radius: 0 0 10px 10px;
   font-size: 18px;
-  position: sticky;
-  top: 0;
+  position: fixed;
   transform: translateX(20%);
-  float: left;
   z-index: 1;
 }
 
-nav img {
-  height: 7vh;
-  width: 5vw;
-  margin: 12px;
+nav label {
+  position: absolute;
+  margin: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(107, 13, 13);
+  font-family: "Dancing Script", cursive;
 }
 
 nav ul {
-  padding: 5px;
   float: right;
+  padding: 3px;
 }
 
 nav ul li {
@@ -61,7 +63,7 @@ nav ul li:hover .dropdown {
 /* list kue */
 .header {
   padding-top: 120px;
-  font-size: 50px;
+  font-size: 55px;
   text-align: center;
   color: chocolate;
 }
@@ -116,6 +118,11 @@ nav ul li:hover .dropdown {
   margin: 10px;
 }
 
+.pesos .sosmed img:hover {
+  transform: rotate(1turn);
+  transition: 1s;
+}
+
 /* footer */
 footer {
   height: 15vh;
@@ -128,4 +135,52 @@ footer {
 
 footer h3 {
   border-top: 1px solid;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  /* navbar */
+  nav {
+    height: 140px;
+    width: 97vw;
+    background-color: rgba(177, 89, 26, 0.842);
+    font-size: 18px;
+    transform: translateX(0);
+    border-radius: 0;
+  }
+
+  nav label {
+    position: absolute;
+    margin-left: 35vw;
+  }
+
+  nav ul {
+    margin-right: 10vw;
+    margin-top: 10vh;
+  }
+
+  nav ul li:hover .dropdown {
+    margin: 0;
+  }
+
+  /* list kue */
+  .header{
+    padding-top: 170px;
+  }
+  .container {
+    width: 97vw;
+  }
+
+  .container .card {
+    height: 50vh;
+    width: 50vw;
+  }
+
+  .container .card h2 {
+    margin-top: 15px;
+  }
+
+  .pesos .sosmed img {
+    width: 10%;
+  }
 }

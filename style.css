@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
   scroll-behavior: smooth;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 /* navbar */
@@ -12,22 +14,25 @@ nav {
   height: 70px;
   width: 70vw;
   background-color: rgba(177, 89, 26, 0.842);
-  border-radius: 5px;
+  border-radius: 0 0 10px 10px;
   font-size: 18px;
   position: absolute;
   transform: translateX(20%);
-  float: left;
+  z-index: 1;
 }
 
-nav img {
-  height: 7vh;
-  width: 5vw;
-  margin: 12px;
+nav label {
+  position: absolute;
+  margin: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(107, 13, 13);
+  font-family: "Dancing Script", cursive;
 }
 
 nav ul {
-  padding: 5px;
   float: right;
+  padding: 3px;
 }
 
 nav ul li {
@@ -65,8 +70,12 @@ nav ul li:hover .dropdown {
 
 .banner .welcome {
   font-size: 25px;
-  width: 20%;
-  transform: translate(90%, 85%);
+  width: 30%;
+  transform: translate(40%, 45%);
+  background-color: rgba(255, 255, 255, 0.459);
+  padding: 30px;
+  border-radius: 30px;
+  border: 5px solid rgba(177, 89, 26, 0.842);
   color: rgb(177, 89, 26);
 }
 
@@ -92,6 +101,13 @@ nav ul li:hover .dropdown {
   color: white;
   box-shadow: 0 0 10px 0;
   transition: 0.5s;
+}
+
+/* tombolup */
+.tombolup {
+  position: sticky;
+  width: 5%;
+  top: 88vh;
 }
 
 /* about */
@@ -128,7 +144,7 @@ nav ul li:hover .dropdown {
   font-size: 40px;
 }
 
-#boxslide .slide{
+#boxslide .slide {
   box-shadow: 0 0 30px 0;
 }
 
@@ -136,13 +152,6 @@ nav ul li:hover .dropdown {
   margin-top: 30px;
   width: 65vw;
   height: 70vh;
-}
-
-/* tombolup */
-.tombolup {
-  position: sticky;
-  width: 5%;
-  top: 88vh;
 }
 
 /* keunggulan */
@@ -188,22 +197,84 @@ footer {
   color: rgb(107, 13, 13);
 }
 
-footer h3{
-    border-top: 1px solid;
+footer h3 {
+  border-top: 1px solid;
+  font-size: 15px;
 }
 
-@media (min-width: 992px) {
-  .banner .welcome {
-    font-size: 25px;
-    width: 30%;
-    transform: translate(40%, 45%);
-    background-color: rgba(255, 255, 255, 0.459);
-    padding: 30px;
-    border-radius: 30px;
-    border: 5px solid rgba(177, 89, 26, 0.842);
+@media only screen and (max-width: 600px) {
+  /* navbar */
+  nav {
+    height: 140px;
+    width: 97vw;
+    background-color: rgba(177, 89, 26, 0.842);
+    font-size: 18px;
+    position: absolute;
+    transform: translateX(0);
+    border-radius: 0;
   }
-}
 
-@media only screen and (max-width: 600px){
-	
+  nav label {
+    position: absolute;
+    margin-left: 35vw;
+  }
+
+  nav ul {
+    margin-right: 10vw;
+    margin-top: 10vh;
+  }
+
+  nav ul li:hover .dropdown {
+    margin: 0;
+  }
+
+  /* banner */
+  .banner .welcome {
+    font-size: 14px;
+    width: 35vw;
+    transform: translate(10vw, 38vh);
+  }
+
+  .banner h2 {
+    font-size: 15px;
+    transform: translate(20vw, 42vh);
+  }
+
+  /* about */
+  #about .kami {
+    width: 60vw;
+    margin: auto;
+    font-size: 15px;
+  }
+
+  #boxslide .slide .mySlides {
+    margin-top: 50px;
+    width: 80vw;
+    height: 50vh;
+  }
+
+  /* tombolup */
+  .tombolup {
+    width: 10%;
+    margin-left: 1vw;
+  }
+
+  /* keunggulan */
+  .box{
+    margin-top: -10vh;
+  }
+
+  .keunggulan {
+    flex-direction: column;
+    width: 45vw;
+    margin: auto;
+  }
+
+  .keunggulan .cardunggul {
+    margin-bottom: 50px;
+  }
+  
+  .keunggulan .cardunggul img {
+    width: 70%;
+  }
 }
