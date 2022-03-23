@@ -202,11 +202,11 @@ footer h3 {
   font-size: 15px;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 400px) {
   /* navbar */
   nav {
-    height: 130px;
-    width: 96vw;
+    height: 120px;
+    width: 95.8vw;
     transform: translateX(0);
     border-radius: 0;
   }
@@ -218,12 +218,12 @@ footer h3 {
   }
 
   nav ul {
-    margin-top: 70px;
+    margin-top: 75px;
     margin-right: 3px;
   }
 
   nav ul li a {
-    padding: 10px;
+    padding: 7px;
   }
 
   nav ul li:hover .dropdown {
@@ -232,18 +232,22 @@ footer h3 {
 
   /* banner */
   .banner .welcome {
-    font-size: 12px;
-    width: 40vw;
-    transform: translate(8vw, 38vh);
+    font-size: 14px;
+    width: 50vw;
+    transform: translate(14vw, 38vh);
   }
 
   .banner h2 {
-    font-size: 15px;
-    width: 35vw;
-    transform: translate(15vw, 42vh);
+    font-size: 17px;
+    width: 40vw;
+    transform: translate(24vw, 42vh);
   }
 
   /* about */
+  #about{
+    height: 250px;
+  }
+
   #about .kami {
     width: 60vw;
     margin: auto;
@@ -253,7 +257,7 @@ footer h3 {
   #boxslide .slide .mySlides {
     margin-top: 60px;
     width: 80vw;
-    height: 35vh;
+    height: 230px;
   }
 
   /* tombolup */
@@ -268,12 +272,12 @@ footer h3 {
   }
 
   .headunggul{
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .keunggulan {
     flex-direction: column;
-    width: 62.5vw;
+    width: 66vw;
     margin: auto;
   }
 

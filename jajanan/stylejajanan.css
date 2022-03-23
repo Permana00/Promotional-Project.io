@@ -138,11 +138,11 @@ footer h3 {
   font-size: 15px;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 400px) {
   /* navbar */
   nav {
-    height: 130px;
-    width: 96vw;
+    height: 120px;
+    width: 95.8vw;
     transform: translateX(0);
     border-radius: 0;
   }
@@ -154,12 +154,12 @@ footer h3 {
   }
 
   nav ul {
-    margin-top: 70px;
+    margin-top: 75px;
     margin-right: 3px;
   }
 
   nav ul li a {
-    padding: 10px;
+    padding: 7px;
   }
 
   nav ul li:hover .dropdown {
@@ -169,6 +169,7 @@ footer h3 {
   /* list kue */
   .header{
     padding-top: 150px;
+    font-size: 40px;
   }
   .container {
     width: 95vw;
@@ -176,7 +177,7 @@ footer h3 {
 
   .container .card {
     height: 50vh;
-    width: 70vw;
+    width: 75vw;
   }
 
   .container .card h2 {
