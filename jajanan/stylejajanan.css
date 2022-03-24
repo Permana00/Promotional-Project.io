@@ -142,24 +142,25 @@ footer h3 {
   /* navbar */
   nav {
     height: 120px;
-    width: 95.8vw;
-    transform: translateX(0);
+    width: 80vw;
+    transform: translateX(7vw);
     border-radius: 0;
   }
 
   nav label {
     position: absolute;
     margin-top: 25px;
-    margin-left: 30vw;
+    margin-left: 20vw;
   }
 
   nav ul {
     margin-top: 75px;
-    margin-right: 3px;
+    margin-right: 5px;
   }
 
   nav ul li a {
-    padding: 7px;
+    padding: 5px;
+    font-size: 13px;
   }
 
   nav ul li:hover .dropdown {
@@ -169,7 +170,7 @@ footer h3 {
   /* list kue */
   .header{
     padding-top: 150px;
-    font-size: 40px;
+    font-size: 35px;
   }
   .container {
     width: 95vw;
@@ -177,7 +178,7 @@ footer h3 {
 
   .container .card {
     height: 50vh;
-    width: 75vw;
+    width: 77vw;
   }
 
   .container .card h2 {
