@@ -207,7 +207,7 @@ footer h3 {
   nav {
     height: 120px;
     width: 80vw;
-    transform: translateX(7vw);
+    transform: translateX(9.5vw);
     border-radius: 0;
   }
 
@@ -218,7 +218,7 @@ footer h3 {
   }
 
   nav ul {
-    margin-top: 75px;
+    margin-top: 80px;
     margin-right: 5px;
   }
 
@@ -235,13 +235,13 @@ footer h3 {
   .banner .welcome {
     font-size: 12px;
     width: 50vw;
-    transform: translate(12vw, 38vh);
+    transform: translate(14vw, 38vh);
   }
 
   .banner h2 {
     font-size: 15px;
     width: 40vw;
-    transform: translate(24vw, 45vh);
+    transform: translate(25vw, 45vh);
   }
 
   /* about */
