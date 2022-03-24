@@ -69,7 +69,7 @@ nav ul li:hover .dropdown {
 }
 
 .container {
-  width: 98vw;
+  width: 98.5vw;
   display: flex;
   flex-wrap: wrap;
   margin-top: 20px;
@@ -140,10 +140,14 @@ footer h3 {
 
 @media only screen and (max-width: 400px) {
   /* navbar */
+  .boxnav{
+    display: flex;
+    justify-content: center;
+  }
   nav {
     height: 120px;
     width: 80vw;
-    transform: translateX(9.5vw);
+    transform: translateX(0);
     border-radius: 0;
   }
 
@@ -173,7 +177,7 @@ footer h3 {
     font-size: 35px;
   }
   .container {
-    width: 99vw;
+    margin: auto;
   }
 
   .container .card {

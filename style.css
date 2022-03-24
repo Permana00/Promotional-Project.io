@@ -204,10 +204,14 @@ footer h3 {
 
 @media only screen and (max-width: 400px) {
   /* navbar */
+  .boxnav{
+    display: flex;
+    justify-content: center;
+  }
   nav {
     height: 120px;
     width: 80vw;
-    transform: translateX(9.5vw);
+    transform: translateX(0);
     border-radius: 0;
   }
 
@@ -232,16 +236,25 @@ footer h3 {
   }
 
   /* banner */
+  .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .banner .welcome {
     font-size: 12px;
     width: 50vw;
-    transform: translate(14vw, 38vh);
+    transform: translate(0);
+    margin-top: 100px;
   }
 
   .banner h2 {
     font-size: 15px;
     width: 40vw;
-    transform: translate(25vw, 45vh);
+    transform: translate(0);
+    margin-top: 50px;
   }
 
   /* about */
