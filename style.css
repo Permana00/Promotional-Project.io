@@ -117,7 +117,6 @@ nav ul li:hover .dropdown {
   right: 5px;
   background-color: rgba(223, 203, 149, 0.747);
   text-align: center;
-  padding: 5px 10px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   border: 2px solid rgb(177, 89, 26);
@@ -128,6 +127,7 @@ nav ul li:hover .dropdown {
 font-size: 20px;
 color: rgb(177, 89, 26);
 font-weight: 500;
+padding: 10px;
 }
 
 .order .dropup{
@@ -284,7 +284,7 @@ footer h3 {
 
   nav ul {
     margin-top: 80px;
-    margin-right: 43px;
+    margin-right: 10vw;
   }
 
   nav ul li a {
