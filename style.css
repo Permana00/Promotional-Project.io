@@ -110,6 +110,42 @@ nav ul li:hover .dropdown {
   top: 88vh;
 }
 
+/* order */
+.order {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  background-color: rgba(223, 203, 149, 0.747);
+  text-align: center;
+  padding: 5px 10px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border: 2px solid rgb(177, 89, 26);
+  cursor: pointer;
+}
+
+.order p{
+font-size: 20px;
+color: rgb(177, 89, 26);
+font-weight: 500;
+}
+
+.order .dropup{
+  display: none;
+}
+
+.order .dropup ul li a{
+  color: rgb(177, 89, 26);
+}
+
+.order .dropup ul li a:hover{
+  color: white;
+}
+
+.order:hover .dropup{
+  display: block;
+}
+
 /* about */
 #about {
   display: flex;
@@ -142,6 +178,7 @@ nav ul li:hover .dropdown {
 #boxslide .slideimage .slidehead {
   text-align: center;
   font-size: 40px;
+  color: chocolate;
 }
 
 #boxslide .slide {
@@ -152,6 +189,29 @@ nav ul li:hover .dropdown {
   margin-top: 30px;
   width: 65vw;
   height: 70vh;
+}
+
+/* pilih */
+.pilih{
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  width: 500px;
+  margin-bottom: 50px;
+}
+
+.pilih h1{
+  padding: 20px;
+  border: 1px solid;
+  color: chocolate;
+  transition: 0.5s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.pilih h1:hover{
+  background-color: chocolate;
+  color: white;
+  transition: 0.5s;
 }
 
 /* keunggulan */
@@ -284,6 +344,26 @@ footer h3 {
     margin-left: 1vw;
   }
 
+  /* pilih */
+  .pilih{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: space-between;
+    width: 150px;
+    transform: translateY(-130%)
+  }
+  
+  .pilih h1{
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+    border: 1px solid;
+    color: chocolate;
+    transition: 0.5s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  }
+
   /* keunggulan */
   .box{
     margin-top: -38vh;
@@ -295,7 +375,7 @@ footer h3 {
 
   .keunggulan {
     flex-direction: column;
-    width: 265px;
+    width: 275px;
     margin: auto;
   }
 
