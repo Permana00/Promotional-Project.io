@@ -268,12 +268,12 @@ footer h3 {
     display: flex;
     justify-content: center;
   }
-  
   nav {
     height: 120px;
     width: 80vw;
     transform: translateX(0);
     border-radius: 0;
+    display: flex;
   }
 
   nav label {
@@ -283,8 +283,8 @@ footer h3 {
   }
 
   nav ul {
-    margin-top: 80px;
-    margin-right: 10vw;
+    margin: auto;
+    margin-top: 82px;
   }
 
   nav ul li a {
@@ -357,6 +357,11 @@ footer h3 {
     text-align: center;
   }
 
+  /* order */
+  .order p{
+    padding: 15px;
+  }
+
   /* keunggulan */
   .box{
     margin-top: -38vh;
@@ -368,11 +373,10 @@ footer h3 {
 
   .keunggulan {
     flex-direction: column;
-    width: 275px;
-    margin: auto;
   }
 
   .keunggulan .cardunggul {
+    margin: auto;
     margin-bottom: 50px;
   }
   

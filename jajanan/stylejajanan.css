@@ -185,6 +185,7 @@ footer h3 {
     width: 80vw;
     transform: translateX(0);
     border-radius: 0;
+    display: flex;
   }
 
   nav label {
@@ -194,8 +195,8 @@ footer h3 {
   }
 
   nav ul {
-    margin-top: 80px;
-    margin-right: 10vw;
+    margin: auto;
+    margin-top: 82px;
   }
 
   nav ul li a {
@@ -227,5 +228,10 @@ footer h3 {
 
   .pesos .sosmed img {
     width: 13%;
+  }
+
+  /* order */
+  .order p{
+    padding: 20px;
   }
 }
