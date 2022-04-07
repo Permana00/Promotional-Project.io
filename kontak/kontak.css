@@ -182,4 +182,9 @@ footer h3 {
     height: 200px;
     margin: auto;
   }
+
+  /* footer */
+  footer{
+    margin-top: 30px;
+  }
 }
