@@ -16,7 +16,7 @@ nav {
   background-color: rgba(177, 89, 26, 0.842);
   border-radius: 0 0 10px 10px;
   font-size: 18px;
-  position: fixed;
+  position: absolute;
   transform: translateX(20%);
   z-index: 1;
 }
@@ -26,8 +26,8 @@ nav label {
   margin: 15px;
   font-size: 30px;
   font-weight: bold;
-  color: rgb(107, 13, 13);
   font-family: "Dancing Script", cursive;
+  color: white;
 }
 
 nav ul {
@@ -42,7 +42,7 @@ nav ul li {
 nav ul li a {
   display: block;
   padding: 20px;
-  color: rgb(107, 13, 13);
+  color: white;
 }
 
 nav ul li a:hover {
@@ -109,29 +109,36 @@ nav ul li:hover .dropdown {
   right: 5px;
   background-color: rgba(223, 203, 149, 0.747);
   text-align: center;
-  padding: 5px 10px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   border: 2px solid rgb(177, 89, 26);
-  cursor: pointer;
 }
 
 .order p{
 font-size: 20px;
 color: rgb(177, 89, 26);
 font-weight: 500;
+padding: 10px;
 }
 
 .order .dropup{
   display: none;
 }
 
-.order .dropup ul li a{
-  color: rgb(177, 89, 26);
+.order .dropup ul{
+  width: 160px;
+  padding-top: 15px;
+  display: flex;
 }
 
-.order .dropup ul li a:hover{
-  color: white;
+.order .dropup ul li a img{
+  width: 50%;
+  justify-content: space-around;
+}
+
+.order .dropup ul li a img:hover{
+  transform: rotate(1turn);
+  transition: 1s;
 }
 
 .order:hover .dropup{

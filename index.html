@@ -11,7 +11,7 @@
     <!-- navbar -->
     <div class="boxnav">
       <nav id="nav">
-        <label>"Mamah Suy"</label>
+        <label>Jajanan Kue</label>
         <ul>
           <li><a href="./index.html">Beranda</a></li>
           <li>
@@ -30,15 +30,9 @@
     <!-- banner -->
     <div class="banner">
       <div class="welcome">
-        <h1>Jajanan Kue "Mamah Suy"</h1>
-        <div class="kelebihan">
-          <h3>- Berkualitas</h3>
-          <h3>- Harga Terjangkau</h3>
-          <h3>- Higienis</h3>
-          <h3>- Terpercaya</h3>
-        </div>
+        <h1>"Mamah Suy"</h1>
       </div>
-      <a href="#boxslide"><h2>Yuk, Lihat-lihat!</h2></a>
+      <a href="#pilih"><h2>Yuk, Lihat-lihat!</h2></a>
     </div>
 
     <!-- tombolup -->
@@ -46,6 +40,7 @@
       ><img class="tombolup" src="./img/tombolup.png" alt="up"
     /></a>
 
+    <!-- order -->
     <div class="order">
       <div class="dropup">
         <ul>
@@ -53,17 +48,17 @@
             <a
               href="https://api.whatsapp.com/send?phone=6285794479752&text=Hallo"
               target="_blank"
-              >WhatsApp</a
+              ><img src="./img/whatsapp.png" alt="wa"></a
             >
           </li>
           <li>
             <a href="https://web.facebook.com/permana.cikal.988" target="_blank"
-              >Facebook</a
+              ><img src="./img/facebook.png" alt="fb"></a
             >
           </li>
           <li>
             <a href="https://www.instagram.com/permana_5046/" target="_blank"
-              >Instagram</a
+              ><img src="./img/instagram.png" alt="ig"></a
             >
           </li>
         </ul>
@@ -86,22 +81,9 @@
       </div>
     </div>
 
-    <!-- slideimage -->
-    <div id="boxslide">
-      <div class="slideimage">
-        <h1 class="slidehead">Preview Kue</h1>
-
-        <div class="slide">
-          <img class="mySlides" src="./img/nastar.jpg" />
-          <img class="mySlides" src="./img/sistik.jpg" />
-          <img class="mySlides" src="./img/bawang.jpeg" />
-        </div>
-      </div>
-    </div>
-
     <!-- rasa kue -->
-    <div class="pilih">
-      <a href="./jajanan/manis.html"><h1>Manis</h1></a>
+    <div id="pilih">
+      <a class="uplittle" href="./jajanan/manis.html"><h1>Manis</h1></a>
       <a href="./jajanan/asin.html"><h1>Asin</h1></a>
     </div>
 
@@ -145,25 +127,5 @@
     <footer>
       <h3>Copyright By Permana</h3>
     </footer>
-
-    <!-- script slideimage -->
-    <script>
-      var myIndex = 0;
-      carousel();
-
-      function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        myIndex++;
-        if (myIndex > x.length) {
-          myIndex = 1;
-        }
-        x[myIndex - 1].style.display = "block";
-        setTimeout(carousel, 2000); // Change image every 2 seconds
-      }
-    </script>
   </body>
 </html>

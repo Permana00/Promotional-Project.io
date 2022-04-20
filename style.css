@@ -26,8 +26,8 @@ nav label {
   margin: 15px;
   font-size: 30px;
   font-weight: bold;
-  color: rgb(107, 13, 13);
   font-family: "Dancing Script", cursive;
+  color: white;
 }
 
 nav ul {
@@ -42,7 +42,7 @@ nav ul li {
 nav ul li a {
   display: block;
   padding: 20px;
-  color: rgb(107, 13, 13);
+  color: white;
 }
 
 nav ul li a:hover {
@@ -71,7 +71,7 @@ nav ul li:hover .dropdown {
 .banner .welcome {
   font-size: 25px;
   width: 30%;
-  transform: translate(40%, 45%);
+  transform: translate(50%, 220%);
   background-color: rgba(255, 255, 255, 0.459);
   padding: 30px;
   border-radius: 30px;
@@ -79,13 +79,14 @@ nav ul li:hover .dropdown {
   color: rgb(177, 89, 26);
 }
 
-.banner .welcome .kelebihan {
-  margin-top: 20px;
+.banner .welcome h1{
+  font-family: "Dancing Script", cursive;
+  text-align: center;
 }
 
 .banner h2 {
   font-size: 30px;
-  transform: translate(20vw, 30vh);
+  transform: translate(24vw, 50vh);
   width: 20vw;
   text-align: center;
   padding: 10px;
@@ -120,7 +121,6 @@ nav ul li:hover .dropdown {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   border: 2px solid rgb(177, 89, 26);
-  cursor: pointer;
 }
 
 .order p{
@@ -134,12 +134,20 @@ padding: 10px;
   display: none;
 }
 
-.order .dropup ul li a{
-  color: rgb(177, 89, 26);
+.order .dropup ul{
+  width: 160px;
+  padding-top: 15px;
+  display: flex;
 }
 
-.order .dropup ul li a:hover{
-  color: white;
+.order .dropup ul li a img{
+  width: 50%;
+  justify-content: space-around;
+}
+
+.order .dropup ul li a img:hover{
+  transform: rotate(1turn);
+  transition: 1s;
 }
 
 .order:hover .dropup{
@@ -154,6 +162,7 @@ padding: 10px;
   margin: auto;
   border-radius: 30px;
   background-color: chocolate;
+  color: white;
 }
 
 #about .kami {
@@ -166,41 +175,17 @@ padding: 10px;
   margin-top: 20px;
 }
 
-/* slideimage */
-#boxslide {
-  padding-top: 60px;
-  margin-bottom: 60px;
-  display: flex;
-  height: 85vh;
-  justify-content: center;
-}
-
-#boxslide .slideimage .slidehead {
-  text-align: center;
-  font-size: 40px;
-  color: chocolate;
-}
-
-#boxslide .slide {
-  box-shadow: 0 0 30px 0;
-}
-
-#boxslide .slide .mySlides {
-  margin-top: 30px;
-  width: 65vw;
-  height: 70vh;
-}
-
 /* pilih */
-.pilih{
+#pilih{
   display: flex;
   margin: auto;
   justify-content: space-between;
   width: 500px;
   margin-bottom: 50px;
+  transform: translateY(50%);
 }
 
-.pilih h1{
+#pilih h1{
   padding: 20px;
   border: 1px solid;
   color: chocolate;
@@ -208,7 +193,7 @@ padding: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
-.pilih h1:hover{
+#pilih h1:hover{
   background-color: chocolate;
   color: white;
   transition: 0.5s;
@@ -222,6 +207,7 @@ padding: 10px;
   border-right: 2px solid;
   border-radius: 50px 50px 0 0;
   margin: auto;
+  margin-top: 100px;
   color: rgb(177, 89, 26);
   background-color: rgba(223, 203, 149, 0.747);
 }
@@ -305,17 +291,16 @@ footer h3 {
   }
 
   .banner .welcome {
-    font-size: 12px;
+    font-size: 15px;
     width: 50vw;
-    transform: translate(0);
+    transform: translate(0, -20%);
     margin-top: 100px;
   }
 
   .banner h2 {
     font-size: 15px;
     width: 40vw;
-    transform: translate(0);
-    margin-top: 50px;
+    transform: translate(0, 100%);
   }
 
   /* about */
@@ -329,16 +314,6 @@ footer h3 {
     font-size: 12px;
   }
 
-  #boxslide .slideimage .slidehead {
-    font-size: 33px;
-  }
-
-  #boxslide .slide .mySlides {
-    margin-top: 45px;
-    width: 80vw;
-    height: 200px;
-  }
-
   /* tombolup */
   .tombolup {
     width: 15%;
@@ -346,15 +321,17 @@ footer h3 {
   }
 
   /* pilih */
-  .pilih{
+  #pilih{
     flex-direction: column;
     width: 150px;
-    transform: translateY(-130%)
   }
   
-  .pilih h1{
-    margin-top: 40px;
+  #pilih h1{
     text-align: center;
+  }
+
+  .uplittle{
+    transform: translateY(-50%);
   }
 
   /* order */
@@ -364,7 +341,7 @@ footer h3 {
 
   /* keunggulan */
   .box{
-    margin-top: -38vh;
+    margin-top: 140px;
   }
 
   .headunggul{

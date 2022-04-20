@@ -26,8 +26,8 @@ nav label {
   margin: 15px;
   font-size: 30px;
   font-weight: bold;
-  color: rgb(107, 13, 13);
   font-family: "Dancing Script", cursive;
+  color: white;
 }
 
 nav ul {
@@ -42,7 +42,7 @@ nav ul li {
 nav ul li a {
   display: block;
   padding: 20px;
-  color: rgb(107, 13, 13);
+  color: white;
 }
 
 nav ul li a:hover {
